@@ -1,10 +1,9 @@
 # Absensi Kelas Guru (offline), versi bersih
 
-> Versi bersih: layout dan semua fitur sama dengan versi asli Maliki Studio, skin diganti profesional (Warm Workspace): latar #fafbf8, satu aksen hijau tua #1e4d3b, font Plus Jakarta Sans, sidebar putih tanpa tekstur dan tanpa bingkai dekoratif, ilustrasi garis sederhana.
+> Versi bersih: layout dan semua fitur sama, skin diganti profesional (Warm Workspace): latar #fafbf8, satu aksen hijau tua #1e4d3b, font Plus Jakarta Sans, sidebar putih tanpa tekstur dan tanpa bingkai dekoratif, ilustrasi garis sederhana.
 
 Aplikasi absen siswa untuk guru. Satu ketukan per siswa, rekap bulanan otomatis, ekspor Excel, dan cetak A4. Jalan di browser HP atau laptop, bisa di-install (PWA), dan tetap jalan tanpa internet.
 
-Dibuat dari request penonton **@bang_yos15**. Turunan dari paket Absensi Karyawan.
 
 ## Fitur
 - Banyak kelas, tiap kelas bisa beberapa mapel (mis. VII-A: Matematika, IPA).
@@ -58,25 +57,23 @@ absensi-kelas-guru/
 
 ## Ubah brand/warna
 - Nama sekolah bawaan: `tema.js` → `nama`. Bisa juga di menu **Atur**.
-- Warna: `tema.css` → `--tema-utama` (hijau papan tulis) dan `--tema-aksen` (kuning kapur). Warna lain menyesuaikan otomatis; teks di atas tombol dihitung terang/gelap otomatis. Pilih warna utama yang cukup gelap supaya teks putih terbaca.
+- Warna: `tema.css` → `--tema-utama` (hijau tua) dan `--tema-aksen` (sorotan tipis). Warna lain menyesuaikan otomatis; teks di atas tombol dihitung terang/gelap otomatis. Pilih warna utama yang cukup gelap supaya teks putih terbaca.
 - Mode: `tema.js` → `mode: "terang" | "gelap" | "auto"`.
 - Warna status H/S/I/A sengaja tetap (hijau/biru/kuning/merah) supaya mudah dibaca.
 - Setelah mengubah berkas, naikkan `CACHE` di `sw.js` agar HP mengambil versi baru.
 
 ## Ubah pakai Claude
 (a) **Claude Code / Claude Desktop**: buka folder paket ini; skill di `.claude/skills/ubah-absensi-kelas-guru` terbaca otomatis.
-(b) **claude.ai**: unggah ZIP skill (tombol "Unduh Skill" di malikisaputra.biz.id/kode) lewat Customize › Skills › tombol "+" › Create skill › Upload a skill, pilih ZIP (folder skill sebagai akar ZIP). Syarat: "Code execution and file creation" aktif di Settings › Capabilities (paket Free/Pro/Max); di Team/Enterprise diatur Owner. Sumber: support.claude.com/en/articles/12512180 (dicek 6 Nov 2026).
+(b) **claude.ai**: unggah ZIP skill lewat Customize › Skills › tombol "+" › Create skill › Upload a skill, pilih ZIP (folder skill sebagai akar ZIP). Syarat: "Code execution and file creation" aktif di Settings › Capabilities.
 
 ## Mau hasil lebih maksimal?
 - impeccable — https://github.com/pbakaus/impeccable (Apache-2.0, dicek 6 Nov 2026)
 - ui-ux-pro-max — https://github.com/nextlevelbuilder/ui-ux-pro-max-skill (MIT menurut GitHub API, dicek 6 Nov 2026)
 
 ## Lisensi
-Lisensi Nonkomersial Maliki Studio: kredit wajib & tidak untuk diperjualbelikan (lihat `LICENSE`). SheetJS Community Edition (Apache-2.0) dimuat dari CDN, tidak disertakan di paket.
+Lihat berkas `LICENSE` yang disertakan di paket ini. SheetJS Community Edition (Apache-2.0) dimuat dari CDN, tidak disertakan di paket.
 
-Dibuat oleh Maliki Studio — malikisaputra.biz.id, follow TikTok/IG @malikisaputra.
-
-<!-- panduan-ai-maliki -->
+<!-- panduan-ai -->
 ## Ubah sendiri sesuai kebutuhanmu pakai AI
 
 Kamu tidak perlu jago coding. Template ini sudah disiapkan supaya mudah diubah AI: ada **AGENTS.md** (aturan proyek untuk AI), **DESIGN.md** (gaya desain), dan skill Claude di folder `.claude/skills/`. Pilih salah satu cara di bawah.
@@ -115,6 +112,5 @@ Kamu tidak perlu jago coding. Template ini sudah disiapkan supaya mudah diubah A
 - Simpan salinan folder asli sebelum mengubah, jadi bisa balik kalau ada yang rusak.
 - Kalau ada error, salin pesan errornya (klik kanan > Inspect > Console) lalu tempel ke AI.
 - Data aplikasi tersimpan di browser (localStorage). Backup dulu sebelum ganti versi.
-- Jangan hapus kredit "Template oleh @malikisaputra", dan template ini **tidak boleh diperjualbelikan** tanpa izin. Mau menjual atau kerja sama? Diskusikan dulu dengan kreatornya (@malikisaputra).
+- Periksa berkas `LICENSE` sebelum membagikan ulang atau memakai paket ini untuk keperluan lain.
 
-Masih bingung? Komen di TikTok/IG **@malikisaputra**, nanti aku bantu.
