@@ -22,7 +22,7 @@
 
   // ---------- Data ----------
   function dataKosong() {
-    return { versi: 1, guru: { nama: '', sekolah: '', tahun: '' }, kelas: [], pertemuan: [] };
+    return { versi: 1, guru: { nama: 'Joseph', sekolah: 'SMP Daarut Tauhiid Boarding School', tahun: '' }, kelas: [], pertemuan: [] };
   }
   function dataContoh() {
     // Semua nama FIKTIF.
@@ -32,7 +32,7 @@
     var k1 = { id: 'k7a', nama: 'VII-A', mapel: ['Matematika', 'IPA'], siswa: siswa(nama7, 2501) };
     var k2 = { id: 'k8b', nama: 'VIII-B', mapel: ['Matematika'], siswa: siswa(nama8, 2401) };
     var d = dataKosong();
-    d.guru = { nama: 'Ibu Rina Kartika, S.Pd.', sekolah: (window.TEMA && TEMA.nama) || 'Sekolah', tahun: '2026/2027' };
+    d.guru = { nama: 'Joseph', sekolah: (window.TEMA && TEMA.nama) || 'Sekolah', tahun: '2026/2027' };
     d.kelas = [k1, k2];
     var hari = new Date(), seed = 7;
     function acak() { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }

@@ -1,6 +1,6 @@
-# Absensi Kelas Guru (offline), versi bersih
+# Absensi Kelas Guru (offline)
 
-> Versi bersih: layout dan semua fitur sama, skin diganti profesional (Warm Workspace): latar #fafbf8, satu aksen hijau tua #1e4d3b, font Plus Jakarta Sans, sidebar putih tanpa tekstur dan tanpa bingkai dekoratif, ilustrasi garis sederhana.
+> Aplikasi absensi dengan tampilan profesional (Warm Workspace): latar #fafbf8, satu aksen hijau tua #1e4d3b, font Plus Jakarta Sans, sidebar putih bersih, ilustrasi garis sederhana. Nama sekolah bawaan: SMP Daarut Tauhiid Boarding School, nama guru bawaan: Joseph (keduanya bisa diganti di menu Atur).
 
 Aplikasi absen siswa untuk guru. Satu ketukan per siswa, rekap bulanan otomatis, ekspor Excel, dan cetak A4. Jalan di browser HP atau laptop, bisa di-install (PWA), dan tetap jalan tanpa internet.
 
