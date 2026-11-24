@@ -1,6 +1,6 @@
 /* kredit-maliki: Template oleh Maliki Saputra (@malikisaputra) — https://malikisaputra.biz.id. Lisensi Nonkomersial Maliki Studio: wajib kredit, dilarang dijual (lihat LICENSE). */
 /* Service worker: simpan semua berkas agar aplikasi jalan tanpa internet. */
-var CACHE = 'absensi-kelas-guru-v1';
+var CACHE = 'absensi-kelas-guru-v2';
 var BERKAS = ['./', './index.html', './style.css', './app.js', './manifest.webmanifest', './ikon.svg', './tema.css', './tema.js', './img/papan.svg'];
 
 self.addEventListener('install', function (e) {
